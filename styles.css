@@ -12,12 +12,28 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #f43648;
+    /*background: #f43648;*/
+    
+    background: #5A3F37;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2C7744, #5A3F37);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2C7744, #5A3F37);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     transition: 0.5s;
 }
 
 body.active {
-    background: #03a9f4;
+    /*background: #03a9f4; */
+
+    background: #000000;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #0f9b0f, #000000);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #0f9b0f, #000000);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 .container {
@@ -138,7 +154,15 @@ body.active {
 }
 
 .formBx .form form input[type="submit"] {
-    background: #f43648;
+    /*background: #f43648; */
+
+    background: #5A3F37;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #2C7744, #5A3F37);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #2C7744, #5A3F37);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     border: none;
     color: #fff;
     max-width: 100px;
@@ -146,7 +170,14 @@ body.active {
 }
 
 .formBx.active .Formsignup input[type="submit"] {
-    background: #03a9f4;
+    /*background: #03a9f4; */
+
+    background: #000000;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0f9b0f, #000000);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0f9b0f, #000000);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7right */
 }
 
 .formBx .form form .forgot {
