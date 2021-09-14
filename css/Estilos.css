@@ -204,7 +204,7 @@ form.sign-in-form {
 /* ANIMACIONES */
 
 .container.sign-up-mode:before {
-    transform: translate(100%, -50%);
+    transform: translate(100%, -45%);
     right: 52%;
     background: -webkit-linear-gradient(to right, #5A3F37, #2C7744);
     /* Chrome 10-25, Safari 5.1-6 */
