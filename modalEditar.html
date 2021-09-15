@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,500;0,900;1,300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Modal Editar</title>
+    <link rel="stylesheet" href="css/ModalEditar.css">
+</head>
+
+<body>
+
+    <div id="container">
+
+        <header class="header">
+            <img class="header__img" src="./img/Orange_Logo.png" alt="">
+            <div class="header__menu">
+                <div class="header__menu--profile">
+                    <img src="./img/user-icon.png" alt="User">
+                    <p>Perfil</p>
+                </div>
+                <ul>
+                    <li><a href="/">Cuenta</a></li>
+                    <li><a href="/">Cerrar Sesión</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <nav class="navbar navbar-light bg-light float-right mt-2 mb-2 mr-3 rounded-pill bg-transparent">
+            <form class="form-inline">
+                <input class="form-control mr-sm-2" type="search" placeholder="Busca un producto" aria-label="Search">
+                <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Buscar</button>
+            </form>
+        </nav>
+
+        <div class="row col-md-12 mt-3">
+
+
+            <div class="card col ml-3 bg-warning">
+                <img class="card-img-top mt-2 img-fluid" src="https://via.placeholder.com/300x200" alt="img">
+                <div class="card-body">
+                    <h3 class="card-title">Producto 1</h3>
+                    <p class="card-text">
+                        Esto es una tarjeta de producto
+                    </p>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary mt-3" data-toggle="modal" data-target="#exampleModal">
+                        Editar
+                    </button>
+                </div>
+            </div>
+
+            <div class="card col ml-2 bg-warning">
+                <img class="card-img-top mt-2 img-fluid" src="https://via.placeholder.com/300x200" alt="img">
+                <div class="card-body">
+                    <h3 class="card-title">Producto 2</h3>
+                    <p class="card-text">
+                        Esto es una tarjeta de producto
+                    </p>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary mt-3" data-toggle="modal" data-target="#exampleModal">
+                        Editar
+                    </button>
+                </div>
+            </div>
+
+            <div class="card col ml-2 bg-warning">
+                <img class="card-img-top mt-2 img-fluid" src="https://via.placeholder.com/300x200" alt="img">
+                <div class="card-body">
+                    <h3 class="card-title">Producto 3</h3>
+                    <p class="card-text">
+                        Esto es una tarjeta de producto
+                    </p>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary mt-3" data-toggle="modal" data-target="#exampleModal">
+                        Editar
+                    </button>
+                </div>
+            </div>
+
+            <div class="card col ml-2 bg-warning">
+                <img class="card-img-top mt-2 img-fluid" src="https://via.placeholder.com/300x200" alt="img">
+                <div class="card-body">
+                    <h3 class="card-title">Producto 4</h3>
+                    <p class="card-text">
+                        Esto es una tarjeta de producto
+                    </p>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary mt-3" data-toggle="modal" data-target="#exampleModal">
+                        Editar
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Modal -->
+
+        <div class="modal fade bd-example-modal-lg" id="exampleModal" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Editar producto</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+
+                    <!--Cuerpo del modal-->
+
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group row">
+                                <label for="input__producto" class="col-lg-2 col-form-label">Nombre del
+                                    producto</label>
+                                <div class="col-lg-10">
+                                    <input type="text" class="form-control" id="input__producto">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="input__precio" class="col-lg-2 col-form-label">Precio</label>
+                                <div class="col-lg-10">
+                                    <input type="number" class="form-control" id="input__precio">
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label for="img__producto" class="col-lg-2 col-form-label">Imagen del
+                                    producto</label>
+                                <div class="col-lg-10">
+                                    <input type="file" class="form-control-file" id="img__producto">
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label for="input__stock" class="col-lg-2 col-form-label">Stock</label>
+                                <div class="col-lg-10">
+                                    <input type="number" class="form-control" id="input__stock">
+                                </div>
+                            </div>
+                            <fieldset class="form-group">
+                                <div class="row">
+                                    <legend class="col-form-label col-lg-2 pt-0">Promoción</legend>
+                                    <div class="col-lg-10">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="gridRadios"
+                                                id="Si__check" value="yes" checked>
+                                            <label class="form-check-label" for="Si__check">
+                                                Sí
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="gridRadios"
+                                                id="No__check" value="No">
+                                            <label class="form-check-label" for="No__check">
+                                                No
+                                            </label>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </fieldset>
+
+                            <div class="form-group row">
+                                <label for="descripcion" class="col-sm-2 col-form-label">Descripción</label>
+                                <div class="col-sm-10">
+                                    <textarea name="descripcion" id="descripcion" cols="68" rows="4"></textarea>
+                                </div>
+                            </div>
+
+                        </form>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary">Guardar</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="js/scriptEjemplo.js"></script>
+    <script src="jquery/jquery-3.6.0.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
