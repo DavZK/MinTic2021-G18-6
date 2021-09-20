@@ -113,7 +113,7 @@ ul:hover {
     color: #fff;
 }
 
-.footer .footer_text span{
+.footer .footer__text span{
     color: orange;
     font-size: 20px;
     font-weight: 500;
