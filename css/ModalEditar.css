@@ -85,3 +85,45 @@ ul:hover {
 
 }
 
+footer {
+    height: 270px;
+    margin-top: 20px;
+    background: rgba(0, 0, 0, 0.836);
+    padding: 20px;
+    width: 100%;
+    border-radius: 0;
+    position: relative;
+}
+
+footer .content {
+    padding: 20px;
+}
+
+footer .logo {
+    width: 100px;
+    height: 80px;
+    border-radius: 0.2em;
+}
+
+footer .logo img{
+    width: 100%;
+}
+
+footer .text{
+    color: #fff;
+}
+
+footer .text span{
+    color: orange;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+@media (max-width: 728px) {
+    footer {
+        position: relative;
+        z-index: -2;
+        background: rgba(0, 0, 0, 0.836);
+    }
+}
