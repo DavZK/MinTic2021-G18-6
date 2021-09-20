@@ -85,7 +85,7 @@ ul:hover {
 
 }
 
-footer {
+.footer {
     height: 270px;
     margin-top: 20px;
     background: rgba(0, 0, 0, 0.836);
@@ -95,25 +95,25 @@ footer {
     position: relative;
 }
 
-footer .content {
+.footer .footer__content {
     padding: 20px;
 }
 
-footer .logo {
+.footer .footer__logo {
     width: 100px;
     height: 80px;
     border-radius: 0.2em;
 }
 
-footer .logo img{
+.footer .footer__logo img{
     width: 100%;
 }
 
-footer .text{
+.footer .footer__text{
     color: #fff;
 }
 
-footer .text span{
+.footer .footer_text span{
     color: orange;
     font-size: 20px;
     font-weight: 500;
@@ -121,7 +121,7 @@ footer .text span{
 
 
 @media (max-width: 728px) {
-    footer {
+    .footer {
         position: relative;
         z-index: -2;
         background: rgba(0, 0, 0, 0.836);
